@@ -53,7 +53,7 @@ variable "instance_type" {
 }
 variable "docker_image_url" {
   description = "Docker image to run in the ECS cluster"
-  default     = "007888388097.dkr.ecr.us-east-1.amazonaws.com/emailapi:latest"
+  default     = "docker.io/ajitsingh25/emailapi:latest"
 }
 variable "app_count" {
   description = "Number of Docker containers to run"
