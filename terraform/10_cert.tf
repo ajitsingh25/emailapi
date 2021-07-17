@@ -28,7 +28,7 @@ resource "tls_self_signed_cert" "cert" {
   }
 }
 
-resource "aws_acm_certificate" "aws-cert" {
+resource "aws_acm_certificate" "my-cert" {
   private_key      = tls_private_key.key.private_key_pem
   certificate_body = tls_self_signed_cert.cert.cert_pem
 }
